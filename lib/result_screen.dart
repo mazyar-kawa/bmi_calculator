@@ -64,7 +64,6 @@ class ResultScreen extends StatelessWidget {
                 Expanded(
                   flex: 2,
                   child: Container(
-                  
                   margin: EdgeInsets.all(20),
                   padding: EdgeInsets.all(20),
                   decoration: BoxDecoration(
