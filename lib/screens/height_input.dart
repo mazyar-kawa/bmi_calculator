@@ -2,11 +2,11 @@ import 'package:bmi_calculator/calculate_brain.dart';
 import 'package:bmi_calculator/components/bottom_button.dart';
 import 'package:bmi_calculator/components/patern_widget.dart';
 import 'package:bmi_calculator/constant.dart';
-import 'package:bmi_calculator/main.dart';
-import 'package:bmi_calculator/result_screen.dart';
+import 'package:bmi_calculator/screens/input_screen.dart';
+import 'package:bmi_calculator/screens/result_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
-import './components/appBar.dart';
+import '../components/appBar.dart';
 
 class HeightInput extends StatefulWidget {
   const HeightInput({super.key, required this.weight});

@@ -1,6 +1,6 @@
-import 'package:bmi_calculator/components/bottom_button.dart';
-import 'package:bmi_calculator/constant.dart';
-import 'package:bmi_calculator/main.dart';
+import './/components/bottom_button.dart';
+import './/constant.dart';
+import './/screens/input_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 

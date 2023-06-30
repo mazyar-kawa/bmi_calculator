@@ -27,8 +27,4 @@ class CalculateBrain{
       return 'You have a lower than normal body weight. You can eat a bit more.';
     }
   }
-
-
-
-
 }
