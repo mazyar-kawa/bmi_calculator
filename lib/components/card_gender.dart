@@ -3,7 +3,13 @@ import 'package:flutter/material.dart';
 
 class CardGender extends StatelessWidget {
   const CardGender({
-    super.key, required this.image, required this.title, required this.onPressed, required this.fontWeight, required this.blur, required this.colour,
+    super.key,
+    required this.image,
+    required this.title,
+    required this.onPressed,
+    required this.fontWeight,
+    required this.blur,
+    required this.colour,
   });
 
   final String image;
@@ -20,36 +26,37 @@ class CardGender extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){
+      onTap: () {
         onPressed();
       },
       child: Container(
         margin: EdgeInsets.all(15),
         decoration: BoxDecoration(
-          color: whiteColor,
-          borderRadius: BorderRadius.circular(10),
-          boxShadow: [
-            BoxShadow(
-              color: Color(0xFF737373) ,
-              blurRadius: blur,
-              spreadRadius: -2,
-              offset: Offset(0, 2)
-            ),
-          ]
-        ),
+            color: whiteColor,
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: [
+              BoxShadow(
+                  color: Color(0xFF737373),
+                  blurRadius: blur,
+                  spreadRadius: -2,
+                  offset: Offset(0, 2)),
+            ]),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(image,width: 55),
+            Image.asset(image, width: 55),
             SizedBox(
               height: 5,
             ),
-            Text(title,style: TextStyle(
-              fontFamily: 'Cairo',
-              color: colour,
-              fontSize: 16,
-              fontWeight: fontWeight,
-            ),),
+            Text(
+              title,
+              style: TextStyle(
+                fontFamily: 'Cairo',
+                color: colour,
+                fontSize: 16,
+                fontWeight: fontWeight,
+              ),
+            ),
           ],
         ),
       ),
