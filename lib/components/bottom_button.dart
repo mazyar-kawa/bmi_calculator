@@ -3,35 +3,36 @@ import 'package:flutter/material.dart';
 
 class BottomButton extends StatelessWidget {
   const BottomButton({
-    super.key, required this.onPressed, required this.title,
+    super.key, required this.title, required this.onPressed,
   });
 
-  
-
-
+  final String title;
   final Function onPressed;
 
-  final String title;
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-        child: GestureDetector(
-          onTap: (){
-              onPressed();
-          },
-          child: Container(
-                      margin: EdgeInsets.all(15),
-                      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          color: slatColor,
-                      ),
-                      child: Center(
-          child: Text(title,style: TextStyle(
-            fontFamily: "Cairo",
+    return Align(
+      alignment: Alignment.center,
+      child: GestureDetector(
+        onTap: (){
+          onPressed();
+        },
+        child: Container(
+          margin: EdgeInsets.all(5),
+          
+          width: MediaQuery.of(context).size.width / 1.5,
+          height: 60,
+          decoration: BoxDecoration(
+            color: greenColor,
+            borderRadius: BorderRadius.circular(25),
+          ),
+          child: Center(child: Text(title,style: TextStyle(
+            color: Colors.white,
             fontSize: 28,
-            fontWeight: FontWeight.bold,color: Colors.white),),
-                      ),
-                    ),
-        ));
+            fontWeight: FontWeight.bold
+          ),)),
+        ),
+      ),
+    );
   }
 }

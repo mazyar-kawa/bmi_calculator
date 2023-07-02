@@ -1,13 +1,16 @@
-import 'package:bmi_calculator/screens/input_screen.dart';
 import 'package:flutter/material.dart';
-
-
+import './screens/input_page.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(
+    MaterialApp(
     debugShowCheckedModeBanner: false,
     home: InputPage(),
   ));
 }
+
+
+
+
 
 
